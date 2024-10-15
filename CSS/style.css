@@ -126,7 +126,8 @@ nav ul li a:hover::after {
 
 .about-col-1 img {
     width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
 }
 
 .about-col-2 {
@@ -491,6 +492,7 @@ nav .fas {
     }
 
     .about-col-1 {
+        margin-top: -25px;
         margin-bottom: 30px;
     }
 
