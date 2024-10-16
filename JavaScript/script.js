@@ -13,6 +13,23 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     const subject = document.querySelector('input[name="entry.2017585366"]').value.trim();
     const message = document.querySelector('textarea[name="entry.309620281"]').value.trim();
 
+    // Validation logic
+    if (!name) {
+        alert("Name is required");
+        return;
+    }
+
+    if (phone.length < 10) {
+        alert("Phone number must be at least 10 digits.");
+        return;
+    }
+
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@(gmail\.com|[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address. Gmail or other domains accepted.");
+        return;
+    }
+
     // URL to post the form data
     const googleFormURL = "https://docs.google.com/forms/d/e/1FAIpQLScNFkg9uzc9ldz7CI5784ZeYl9yM9z_5NB0QVXwmcHk2YA0Sw/formResponse";
     
@@ -39,7 +56,6 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         document.getElementById("error").textContent = 'An error occurred while submitting the form.';
     });
 });
-
 
 // Tab functionality
 var tablinks = document.getElementsByClassName("tab-links");
