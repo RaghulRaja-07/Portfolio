@@ -54,6 +54,7 @@ nav a#reload-page:hover h1 {
 nav ul {
     display: inline-block;
     list-style: none;
+    padding-right: 60px;
 }
 
 nav ul li {
@@ -81,6 +82,14 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
     width: 100%;
+}
+
+nav .fa-bars,
+nav .fa-times {
+  display: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 /* Header Text Styling */
