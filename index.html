@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghul Portfolio</title>
+    <link rel="icon" href="assets/R.png" type="image/png">
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script src="javascript/script.js" defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <!-- Navigation Bar -->
+<nav>
+    <a href="#" id="reloadPage">
+        <h1 id="navTitle" align="left"><span style="color: #ff004f">Rag</span>hul</h1>
+    </a>
+    <ul id="sideMenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closeMenu()"></i>
+    </ul>
+    <i class="fa-sharp fa-solid fa-bars" onclick="openMenu()"></i>
+</nav>
+            <!-- Header Text -->
+            <div class="header-text">
+                <p class="header-title">WEB DEVELOPER</p>
+                <h1 class="header-content">
+                    I am <span style="color: #ff004f">Raghul</span>, a passionate Web
+                    Developer from Tenkasi, Tamil Nadu.<br> With a strong foundation in
+                    frontend development, I am actively seeking opportunities to apply
+                    my skills while eagerly learning backend technologies to become a
+                    full-stack developer.
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!-- About Image -->
+                <div class="about-col-1">
+                    <img src="assets/2.png" alt="Profile Image is Unavailable!" />
+                </div>
+                <!-- About Content -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hello! I'm <span style="color: #ff004f">Raghul</span>, a
+                        passionate Web Developer from Tenkasi, Tamil Nadu.<br />
+                        I graduated with a Bachelor's degree in Computer Science from St.
+                        John's College in 2022.<br /><br />
+                         I have a solid foundation in frontend development and am currently expanding my knowledge in backend technologies, working toward my goal of becoming a full-stack developer.<br /><br />
+                        I'm a quick learner who thrives on taking on new challenges and
+                        acquiring new skills along the way. I'm an active listener who remains calm under pressure and truly enjoys collaborating in team environments. I take pleasure in mentoring others by sharing my knowledge in the areas where I excel.<br><br>
+I'm always excited to explore new opportunities, learn, and grow in this ever-evolving field.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="openTab('education', event)">Education</p>
+                        <p class="tab-links" onclick="openTab('certification', event)">Certification</p>
+                    </div>
+                    <!-- Tab Contents for Skills -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Development:</span> HTML, CSS, JavaScript, React (Learning)</li>
+                            <li><span>Backend Development:</span> Node.js (Learning), MySQL</li>
+                            <li><span>Version Control:</span> GitHub</li>
+                            <li><span>Responsive Design:</span> Flexbox, Grid</li>
+                            <li><span>Tools:</span> Adobe Premiere Pro, Canva, Webflow, Figma, MS Office Applications</li>
+                        </ul>
+                    </div>
+                    <!-- Tab Contents for Education -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Sc., Computer Science (2022):</span> St John's College, Tirunelveli. <br /> Percentage - 74%</li>
+                            <li><span>HSC - Maths Biology (2019):</span> Sri Ramakrishna Matriculation Higher Secondary School. <br /> Percentage - 66%</li>
+                            <li><span>SSLC (2017):</span> Sri Ramakrishna Matriculation Higher Secondary School. <br /> Percentage - 96%</li>
+                        </ul>
+                    </div>
+                    <!-- Tab Contents for Certification -->
+                    <div class="tab-contents" id="certification">
+                        <ul>
+                            <li><span>GUVI Certification:</span> HTML & CSS, JavaScript, MySQL, Git, AWS</li>
+                            <li><span>NPTEL Certification:</span> Cloud Computing</li> 
+                            <li><span>Times Pro Certification:</span> Banking Financial Services & Insurance</li>
+                            <li>MS Office Applications</li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>
+                        Building responsive and user-friendly websites with HTML, CSS, JavaScript frameworks, and MySQL. We leverage Git for efficient version control and collaboration.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>Web Design</h2>
+                    <p>
+                        Creating engaging and user-friendly designs through prototypes and no-code websites using Webflow and Figma. I focus on intuitive layouts that enhance user experience and accelerate your project launch.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Video & Photo Editor</h2>
+                    <p>
+                        Enhancing visuals using Adobe Premiere Pro and Canva, tailored for both personal projects and professional needs.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/4.png" alt="Image is Unavailable!" />
+                    <div class="layer">
+                        <h3>Online Movie Ticket Booking System</h3>
+                        <p>
+                            This online platform streamlines ticket booking with a user-friendly interface, utilizing HTML, CSS, JavaScript, PHP, and MySQL. It features both an admin panel and server-side management, ensuring a seamless experience. Developed as my final year project in college.
+                        </p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <!-- <img src="" alt="Image is Unavailable!" /> -->
+                    <div class="layer">
+                        <h3>Portfolio for Video Editor</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                            fugit voluptatem natus recusandae aut impedit fugiat
+                            accusantium, temporibus eius ea deserunt neque earum nostrum
+                            ipsam!
+                        </p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <!-- <img src="" alt="Image is Unavailable!" /> -->
+                    <div class="layer">
+                        <h3>IVN Coconut Oil</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                            fugit voluptatem natus recusandae aut impedit fugiat
+                            accusantium, temporibus eius ea deserunt neque earum nostrum
+                            ipsam!
+                        </p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+<!-- Contact Section -->
+<div id="contact">
+  <div class="container">
+      <div class="row">
+          <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p>
+                  <i class="fa-sharp fa-solid fa-envelope"></i>
+                  <a href="mailto:raghulraja26@gmail.com">raghulraja26@gmail.com</a>
+              </p>
+              <p>
+                  <i class="fa-sharp fa-solid fa-square-phone"></i>
+                  <a href="tel:+918148298479">+91 8148298479</a>
+              </p>
+              <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/raghulraja07/" target="_blank">
+                      <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                  <a href="https://www.instagram.com/raghulraja_07/" target="_blank">
+                      <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="https://www.x.com/in/raghulraja07/" target="_blank">
+                      <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="https://www.facebook.com/in/raghulraja07/" target="_blank">
+                      <i class="fa-brands fa-facebook"></i>
+                  </a>
+              </div>
+              <a href="assets/Raghul - Resume.pdf" class="btn btn2" target="_blank">View Resume</a>
+          </div>
+          <div class="contact-right">
+            <form id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLScNFkg9uzc9ldz7CI5784ZeYl9yM9z_5NB0QVXwmcHk2YA0Sw/formResponse" method="POST">
+                <input type="text" id="name" name="entry.1502164838" placeholder="Enter your name" required />
+                <input type="tel" id="phone" name="entry.1191112970" placeholder="Enter your phone number" required minlength="10" />
+                <input type="email" id="email" name="entry.211793575" placeholder="Enter your email address" required />
+                <input type="text" name="entry.2017585366" placeholder="Enter subject (optional)" />
+                <textarea name="entry.309620281" rows="5" placeholder="Type your message here..." required></textarea>
+                <button type="submit" class="btn2">Submit</button>
+                <p id="error"></p>
+            </form>
+        </div>
+      </div>
+  </div>
+  <div class="copyright">
+      <p>
+          <i class="fa-sharp fa-regular fa-copyright"></i> Designed & Developed by Raghul
+      </p>
+  </div>
+</div>
