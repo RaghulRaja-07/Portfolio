@@ -24,6 +24,33 @@ body {
     background-position: center;
 }
 
+.header-text {
+    margin-top: 25%;
+    font-size: 30px;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-text p {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-text p.header-title {
+    font-size: 2.5rem;
+    color: #ff004f;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-text h1.header-content {
+    font-size: 1rem;
+    text-align: justify;
+    margin: 0;
+    padding: 0 1rem;
+}
+
 /* Container for Content */
 .container {
     padding: 10px 10%;
@@ -35,13 +62,15 @@ nav {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav h1 {
     font-size: 24px;
     color: #fff;
     cursor: pointer;
-    text-decoration: none; 
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif; 
 }
 
 nav a#reloadPage {
@@ -55,7 +84,7 @@ nav a#reloadPage:hover h1 {
 nav ul {
     display: inline-block;
     list-style: none;
-    padding-right: 60px;
+    padding-right: 10px;
 }
 
 nav ul li {
@@ -68,6 +97,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav ul li a::after {
@@ -91,31 +121,6 @@ nav .fa-times {
   color: white;
   font-size: 18px;
   cursor: pointer;
-}
-
-/* Header Text Styling */
-.header-text {
-    margin-top: 25%;
-    font-size: 30px;
-    max-width: 600px;
-}
-
-.header-text p {
-    font-size: 20px;
-    color: #fff;
-}
-
-.header-text p.header-title {
-    font-size: 2.5rem;
-    color: #ff004f;
-    text-align: left;
-}
-
-.header-text h1.header-content {
-    font-size: 1rem;
-    text-align: justify;
-    margin: 0;
-    padding: 0 1rem;
 }
 
 /* About Section */
@@ -440,11 +445,11 @@ footer {
 
 @media only screen and (max-width: 600px) {
     #header {
-        background-image: url('../assets/3.png');
+        background-image: url('../assets/5.png');
     }
 
     .header-text {
-        margin-top: 95%;
+        margin-top: 15%;
         font-size: 16px;
         display: block;
     }
@@ -479,7 +484,7 @@ footer {
         right: -200px;
         width: 200px;
         height: 100vh;
-        padding-top: 20px;
+        padding-top: 30px;
         z-index: 2;
         transition: right 0.5s ease;
     }
@@ -540,3 +545,211 @@ footer {
         font-size: 14px;
     }
 }
+
+    /* Media Query for devices with a max-width of 430px */
+@media only screen and (max-width: 430px) {
+    #header {
+        background-image: url('../assets/6.png');
+    }
+
+    .header-text {
+        margin-top: 10%; 
+        font-size: 18px; 
+        display: block;
+    }
+
+    .header-title {
+        margin-top: 10%;
+        display: block;
+        font-size: 22px; 
+    }
+
+    .header-text h1 {
+        font-size: 24px; 
+        color: #fff;
+        margin-top: 5px; 
+    }
+
+    nav .fa-times,
+    nav .fa-bars {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 40px;
+        z-index: 2;
+        transition: right 0.5s ease;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px 20px; 
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 15px;
+        left: 35px;
+        cursor: pointer;
+    }
+
+    .sub-title {
+        font-size: 36px; 
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 {
+        margin-top: -20px; 
+        margin-bottom: 20px; 
+    }
+
+    .about-col-2 {
+        font-size: 12px; 
+    }
+
+    .tab-links {
+        font-size: 14px; 
+        margin-right: 15px; 
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-left p {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        margin: 8px 0; 
+    }
+
+    .contact-left p i {
+        margin-right: 8px; 
+        color: #ff004f; 
+    }
+
+    .copyright {
+        font-size: 12px; 
+    }
+}
+
+/* Media Query for devices with a max-width of 390px */
+@media only screen and (max-width: 390px) {
+    #header {
+        background-image: url('../assets/6.png'); 
+    }
+
+    .header-text {
+        margin-top: 25%; 
+        font-size: 16px; 
+        display: block;
+        padding: 0; 
+    }
+
+    .header-title {
+        margin-top: 10px;
+        display: block;
+        font-size: 20px; 
+    }
+
+    .header-text h1 {
+        font-size: 22px; 
+        color: #fff;
+        margin-top: 5px; 
+    }
+
+    nav .fa-times,
+    nav .fa-bars {
+        display: block;
+        font-size: 24px; 
+        cursor: pointer;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 180px; 
+        height: 100vh;
+        padding-top: 40px;
+        z-index: 2;
+        transition: right 0.5s ease;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px 20px; 
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 15px; 
+        left: 30px;
+        cursor: pointer;
+    }
+
+    .sub-title {
+        font-size: 32px; 
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 {
+        margin-top: -15px;
+        margin-bottom: 15px; 
+    }
+
+    .about-col-2 {
+        font-size: 10px;
+    }
+
+    .tab-links {
+        font-size: 12px; 
+        margin-right: 10px; 
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-left p {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        margin: 5px 0; 
+    }
+
+    .contact-left p i {
+        margin-right: 5px; 
+        color: #ff004f; 
+    }
+
+    .copyright {
+        font-size: 10px; 
+    }
+}
+
