@@ -1,9 +1,12 @@
 // Select the h1 element and add click event listener to reload the page
-const navTitle = document.getElementById('navTitle'); 
-navTitle.addEventListener('click', function() {
-    window.location.reload();
+document.addEventListener('DOMContentLoaded', function() {
+    const navTitle = document.getElementById('navTitle');
+    navTitle.addEventListener('click', function() {
+        window.location.reload();
+    });
 });
 
+// Contact Form
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
@@ -69,12 +72,12 @@ function openTab(tabName, event) {
     document.getElementById(tabName).classList.add("active-tab");
 }
 
+// SideMenu Functionality
 var sideMenu = document.getElementById("sideMenu");
 
 function openMenu() {
     sideMenu.style.right = "0"; 
 }
-
 function closeMenu() {
     sideMenu.style.right = "-200px"; 
 }
